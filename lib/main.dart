@@ -1,17 +1,15 @@
 import "package:flutter/material.dart";
+import 'package:my_app/src/screens/login.dart';
 
 void main() => runApp(const App());
 
 class App extends StatelessWidget {
-  const App({super.key});
+  const App({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: "FootScore",
-        home: Scaffold(
-          appBar: AppBar(title: const Text("Home page")),
-          body: const Center(child: Text("Hello World!")),
-        ));
+    return const MaterialApp(title: "Login", home: Login());
   }
 }
