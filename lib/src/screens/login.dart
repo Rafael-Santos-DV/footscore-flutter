@@ -15,14 +15,14 @@ class _Login extends State<Login> {
         padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
         color: const Color.fromRGBO(16, 19, 44, 1),
         child: Column(
-          children: const <Widget>[
-            Text("ola"),
-            Text("ola"),
-            Text("ola"),
-            Text("ola"),
-            Text("ola"),
-            Text("ola"),
-            Text("ola")
+          children: <Widget>[
+            Padding(
+                padding: const EdgeInsets.fromLTRB(0, 20, 20, 0),
+                child: Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      Image.asset("lib/src/assets/logo.png"),
+                    ])),
           ],
         ));
   }
