@@ -2,22 +2,27 @@
 
 Resultados de jogos de futebol em tempo real com FootScore app;
 
-## APP
+## Screen
+
+<div style="display: flex; justify-content: space-between;">
+
+<div>
 
 #### Login
 
-<div>
-  <img src="./.github/assets/mobile-1.png" alt="Mobile Login" width="400px"/>
+  <img src="./.github/assets/mobile-1.png" alt="Mobile Login" width="180px"/>
 </div>
+
+<div>
 
 #### Home
 
-<div>
-  <img src="./.github/assets/mobile-2.png" alt="Mobile Home" width="400px"/>
+  <img src="./.github/assets/mobile-2.png" alt="Mobile Home" width="200px"/>
+  </div>
 </div>
 
 - Desenvolvido em Flutter
-- Graphql
+- API Graphql
 
 `git clone https://github.com/Rafael-Santos-DV/footscore-flutter.git`
 
