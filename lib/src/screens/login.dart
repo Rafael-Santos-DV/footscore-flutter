@@ -7,7 +7,7 @@ class Login extends StatefulWidget {
   State<Login> createState() => _Login();
 }
 
-class _Login extends State<Login> {
+class _Login extends State<Login> with TickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Container(
