@@ -24,6 +24,6 @@ Resultados de jogos de futebol em tempo real com FootScore app;
 - Desenvolvido em Flutter
 - API Graphql
 
-`git clone https://github.com/Rafael-Santos-DV/footscore-flutter.git`
+```git clone https://github.com/Rafael-Santos-DV/footscore-flutter.git```
 
-`cd footscore-flutter`
+```cd footscore-flutter```
