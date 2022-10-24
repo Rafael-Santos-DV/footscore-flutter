@@ -43,7 +43,7 @@ class _Home extends State<Home> {
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
-                    fontSize: 60,
+                    fontSize: 50,
                     fontFamily: "Oregano"))),
         Container(
             margin: const EdgeInsets.fromLTRB(40, 0, 0, 0),
@@ -92,8 +92,64 @@ class _Home extends State<Home> {
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
-                    fontSize: 60,
+                    fontSize: 50,
                     fontFamily: "Oregano"))),
+        Container(
+            color: Colors.transparent,
+            height: 200,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Container(
+                  width: 160,
+                  margin: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.all(10.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15.0),
+                    color: Colors.white12,
+                  ),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          Container(
+                              padding: const EdgeInsets.all(5),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: const Color.fromRGBO(246, 38, 129, 1),
+                              ),
+                              child: const Text("Live",
+                                  style: TextStyle(
+                                    fontSize: 14,
+                                    color: Colors.white,
+                                    decoration: TextDecoration.none,
+                                  ))),
+                          Container(
+                              padding: const EdgeInsets.all(2),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(5),
+                                color: const Color.fromARGB(255, 142, 246, 38),
+                              ),
+                              child: const Text("50",
+                                  style: TextStyle(
+                                    fontSize: 12,
+                                    color: Colors.white,
+                                    decoration: TextDecoration.none,
+                                  ))),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: const EdgeInsets.all(10),
+                  color: Colors.black54,
+                  width: 140,
+                  child: const Text(""),
+                )
+              ],
+            ))
       ],
     );
   }
