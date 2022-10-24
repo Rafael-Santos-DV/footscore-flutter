@@ -1,4 +1,7 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import 'package:my_app/src/components/Card/live_game.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -43,7 +46,7 @@ class _Home extends State<Home> {
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
-                    fontSize: 50,
+                    fontSize: 40,
                     fontFamily: "Oregano"))),
         Container(
             margin: const EdgeInsets.fromLTRB(40, 0, 0, 0),
@@ -92,115 +95,25 @@ class _Home extends State<Home> {
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
-                    fontSize: 50,
+                    fontSize: 40,
                     fontFamily: "Oregano"))),
         Container(
             color: Colors.transparent,
             height: 200,
             child: ListView(
               scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                Container(
-                  width: 160,
-                  margin: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.all(12.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15.0),
-                    color: const Color.fromARGB(24, 227, 227, 227),
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: <Widget>[
-                          Container(
-                              padding: const EdgeInsets.all(5),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                color: const Color.fromRGBO(246, 38, 129, 1),
-                              ),
-                              child: const Text("Live",
-                                  style: TextStyle(
-                                    fontSize: 14,
-                                    color: Colors.white,
-                                    decoration: TextDecoration.none,
-                                  ))),
-                          Container(
-                              padding: const EdgeInsets.all(2),
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(5),
-                                color: const Color.fromARGB(255, 142, 246, 38),
-                              ),
-                              child: const Text("50",
-                                  style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.white,
-                                    decoration: TextDecoration.none,
-                                  ))),
-                        ],
-                      ),
-                      Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: <Widget>[
-                            Image.network(
-                              "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
-                              width: 40,
-                            ),
-                            Image.network(
-                              "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
-                              width: 40,
-                            )
-                          ]),
-                      Column(
-                        children: <Widget>[
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Container(
-                                  color: Colors.transparent,
-                                  child: const Text("Real Madrid",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "Oregano",
-                                          decoration: TextDecoration.none,
-                                          fontSize: 20))),
-                              Container(
-                                  color: Colors.transparent,
-                                  child: const Text("2",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "Oregano",
-                                          decoration: TextDecoration.none,
-                                          fontSize: 20)))
-                            ],
-                          ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Container(
-                                  color: Colors.transparent,
-                                  child: const Text("Liverpool",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "Oregano",
-                                          decoration: TextDecoration.none,
-                                          fontSize: 20))),
-                              Container(
-                                  color: Colors.transparent,
-                                  child: const Text("2",
-                                      style: TextStyle(
-                                          color: Colors.white,
-                                          fontFamily: "Oregano",
-                                          decoration: TextDecoration.none,
-                                          fontSize: 20)))
-                            ],
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-                ),
+              children: const <Widget>[
+                LiveGame(
+                  time: "60",
+                  homeTime: "Real Madrid",
+                  awayTeam: "Liverpool",
+                  homeTeamGoals: "2",
+                  homeTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
+                  awayTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+                  awayTeamGoals: "0",
+                )
               ],
             ))
       ],
