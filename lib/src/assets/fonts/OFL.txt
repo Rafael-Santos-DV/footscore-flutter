@@ -1,5 +1,5 @@
-Copyright (c) 2011, JM Sole (http://jmsole.cl|info@jmsole.cl),
-with Reserved Font Name "Noticia Text".
+Copyright (c) 2012, Brian J. Bonislawsky DBA Astigmatic (AOETI) (astigma@astigmatic.com), with Reserved Font Names "Oregano"
+
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:

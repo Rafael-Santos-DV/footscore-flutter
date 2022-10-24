@@ -11,6 +11,7 @@ class _Home extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Padding(
             padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
@@ -35,7 +36,15 @@ class _Home extends State<Home> {
                       onPressed: () {},
                     ))
               ],
-            ))
+            )),
+        const Padding(
+            padding: EdgeInsets.fromLTRB(20, 40, 0, 5),
+            child: Text("Campeonatos",
+                style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontFamily: "Oregano")))
       ],
     );
   }

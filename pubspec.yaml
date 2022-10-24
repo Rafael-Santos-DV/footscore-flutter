@@ -75,12 +75,17 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Noticia Text,
+    - family: Noticia Text
       fonts:
         - asset: lib/src/assets/fonts/NoticiaText-Regular.ttf
         - asset: lib/src/assets/fonts/NoticiaText-Bold.ttf
           style: normal
 
+    - family: Oregano
+      fonts:
+        - asset: lib/src/assets/fonts/Oregano-Regular.ttf
+        - asset: lib/src/assets/fonts/Oregano-Italic.ttf
+          style: normal
     # - family: Trajan Pro
     #   fonts:
     #     - asset: fonts/TrajanPro.ttf
