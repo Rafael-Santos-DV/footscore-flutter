@@ -44,7 +44,56 @@ class _Home extends State<Home> {
                     decoration: TextDecoration.none,
                     color: Colors.white,
                     fontSize: 60,
-                    fontFamily: "Oregano")))
+                    fontFamily: "Oregano"))),
+        Container(
+            margin: const EdgeInsets.fromLTRB(40, 0, 0, 0),
+            color: Colors.transparent,
+            height: 90,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: <Widget>[
+                Container(
+                    margin: const EdgeInsets.all(8.0),
+                    width: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white),
+                    child: Image.network(
+                        "https://a1.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F23.png")),
+                Container(
+                    margin: const EdgeInsets.all(8.0),
+                    width: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white),
+                    child: Image.network(
+                        "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F85.png")),
+                Container(
+                    margin: const EdgeInsets.all(8.0),
+                    width: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white),
+                    child: Image.network(
+                        "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fleaguelogos%2Fsoccer%2F500%2F12.png")),
+                Container(
+                    margin: const EdgeInsets.all(8.0),
+                    width: 80,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white),
+                    child: Image.network(
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Ligue1.svg/1200px-Ligue1.svg.png")),
+              ],
+            )),
+        const Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 0, 5),
+            child: Text("Jogos ao vivo",
+                style: TextStyle(
+                    decoration: TextDecoration.none,
+                    color: Colors.white,
+                    fontSize: 60,
+                    fontFamily: "Oregano"))),
       ],
     );
   }
