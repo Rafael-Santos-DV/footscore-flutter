@@ -103,12 +103,13 @@ class _Home extends State<Home> {
                 Container(
                   width: 160,
                   margin: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.all(10.0),
+                  padding: const EdgeInsets.all(12.0),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(15.0),
-                    color: Colors.white12,
+                    color: const Color.fromARGB(24, 227, 227, 227),
                   ),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -138,16 +139,68 @@ class _Home extends State<Home> {
                                     decoration: TextDecoration.none,
                                   ))),
                         ],
+                      ),
+                      Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: <Widget>[
+                            Image.network(
+                              "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
+                              width: 40,
+                            ),
+                            Image.network(
+                              "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+                              width: 40,
+                            )
+                          ]),
+                      Column(
+                        children: <Widget>[
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Container(
+                                  color: Colors.transparent,
+                                  child: const Text("Real Madrid",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: "Oregano",
+                                          decoration: TextDecoration.none,
+                                          fontSize: 20))),
+                              Container(
+                                  color: Colors.transparent,
+                                  child: const Text("2",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: "Oregano",
+                                          decoration: TextDecoration.none,
+                                          fontSize: 20)))
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: <Widget>[
+                              Container(
+                                  color: Colors.transparent,
+                                  child: const Text("Liverpool",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: "Oregano",
+                                          decoration: TextDecoration.none,
+                                          fontSize: 20))),
+                              Container(
+                                  color: Colors.transparent,
+                                  child: const Text("2",
+                                      style: TextStyle(
+                                          color: Colors.white,
+                                          fontFamily: "Oregano",
+                                          decoration: TextDecoration.none,
+                                          fontSize: 20)))
+                            ],
+                          ),
+                        ],
                       )
                     ],
                   ),
                 ),
-                Container(
-                  margin: const EdgeInsets.all(10),
-                  color: Colors.black54,
-                  width: 140,
-                  child: const Text(""),
-                )
               ],
             ))
       ],
