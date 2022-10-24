@@ -18,9 +18,9 @@ class _MatchUI extends State<MatchUI> {
   @override
   Widget build(BuildContext context) {
     return Container(
-        width: 300,
+        width: 100,
         height: 90,
-        margin: const EdgeInsets.fromLTRB(0, 8, 0, 8),
+        margin: const EdgeInsets.fromLTRB(15, 8, 15, 8),
         padding: const EdgeInsets.fromLTRB(20, 5, 20, 10),
         decoration: BoxDecoration(
             color: const Color.fromRGBO(48, 79, 242, 0.16),

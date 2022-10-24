@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_app/src/components/live_game.dart';
 import 'package:my_app/src/components/match.dart';
+import 'package:my_app/src/components/menu.dart';
 import 'package:my_app/src/components/title.dart';
 
 class Home extends StatefulWidget {
@@ -147,6 +148,7 @@ class _Home extends State<Home> {
             const MatchUI(),
           ]),
         ),
+        const Menu()
       ],
     );
   }

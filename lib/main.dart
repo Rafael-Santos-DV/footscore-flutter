@@ -15,7 +15,7 @@ class App extends StatelessWidget {
       title: "Login",
       theme: ThemeData(fontFamily: "Noticia Text"),
       home: Container(
-        padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
+        padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
         color: const Color.fromRGBO(16, 19, 44, 1),
         child: const Home(),
       ),
