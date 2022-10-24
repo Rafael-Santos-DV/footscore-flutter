@@ -1,7 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
-import 'package:my_app/src/components/Card/live_game.dart';
+import 'package:my_app/src/components/live_game.dart';
+import 'package:my_app/src/components/match.dart';
+import 'package:my_app/src/components/title.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -42,12 +42,7 @@ class _Home extends State<Home> {
             )),
         const Padding(
             padding: EdgeInsets.fromLTRB(20, 40, 0, 5),
-            child: Text("Campeonatos",
-                style: TextStyle(
-                    decoration: TextDecoration.none,
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontFamily: "Oregano"))),
+            child: TitleUI(title: "Campeonatos")),
         Container(
             margin: const EdgeInsets.fromLTRB(40, 0, 0, 0),
             color: Colors.transparent,
@@ -91,12 +86,7 @@ class _Home extends State<Home> {
             )),
         const Padding(
             padding: EdgeInsets.fromLTRB(20, 20, 0, 5),
-            child: Text("Jogos ao vivo",
-                style: TextStyle(
-                    decoration: TextDecoration.none,
-                    color: Colors.white,
-                    fontSize: 40,
-                    fontFamily: "Oregano"))),
+            child: TitleUI(title: "Jogos ao vivo")),
         Container(
             color: Colors.transparent,
             height: 200,
@@ -113,9 +103,37 @@ class _Home extends State<Home> {
                   awayTeamImageUrl:
                       "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
                   awayTeamGoals: "0",
-                )
+                ),
+                LiveGame(
+                  time: "60",
+                  homeTime: "Real Madrid",
+                  awayTeam: "Liverpool",
+                  homeTeamGoals: "2",
+                  homeTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
+                  awayTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+                  awayTeamGoals: "0",
+                ),
+                LiveGame(
+                  time: "60",
+                  homeTime: "Real Madrid",
+                  awayTeam: "Liverpool",
+                  homeTeamGoals: "2",
+                  homeTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/9/98/Real_Madrid.png",
+                  awayTeamImageUrl:
+                      "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+                  awayTeamGoals: "0",
+                ),
               ],
-            ))
+            )),
+        const Padding(
+            padding: EdgeInsets.fromLTRB(20, 20, 0, 5),
+            child: TitleUI(
+              title: "Matches",
+            )),
+        const MatchUI(),
       ],
     );
   }
