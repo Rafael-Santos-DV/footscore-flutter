@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/src/screens/home.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -8,6 +9,19 @@ class Login extends StatefulWidget {
 }
 
 class _Login extends State<Login> with TickerProviderStateMixin {
+  void changeScreen() {
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: (context) => Container(
+          padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
+          color: const Color.fromRGBO(16, 19, 44, 1),
+          child: const Home(),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
@@ -31,12 +45,14 @@ class _Login extends State<Login> with TickerProviderStateMixin {
                 style: TextStyle(
                     decoration: TextDecoration.none,
                     color: Colors.white,
-                    fontSize: 50)),
+                    fontFamily: "Oregano",
+                    fontWeight: FontWeight.bold,
+                    fontSize: 70)),
             Text(
-                "Seach millions of jobs end get the aside scop on companies. Wait for what? Let’s get start it!",
+                "Acompanhe os jogos de qualquer campeonato de futebol do mundo",
                 style: TextStyle(
                   fontSize: 25,
-                  fontStyle: FontStyle.italic,
+                  fontFamily: "Oregano",
                   decoration: TextDecoration.none,
                   color: Color.fromARGB(255, 79, 81, 80),
                 ))
@@ -53,11 +69,11 @@ class _Login extends State<Login> with TickerProviderStateMixin {
                   )),
                   backgroundColor: MaterialStateProperty.all(
                       const Color.fromRGBO(35, 107, 254, 1))),
-              onPressed: () {},
-              child: const Text("Start",
+              onPressed: changeScreen,
+              child: const Text("Começar Agora",
                   style: TextStyle(
                     color: Colors.white,
-                    fontFamily: "Noticia Text",
+                    fontFamily: "Oregano",
                     fontSize: 20,
                   )),
             )
